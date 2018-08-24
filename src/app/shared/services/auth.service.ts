@@ -7,20 +7,19 @@ import { ToastrService } from 'ngx-toastr';
 export class AuthService {
 
   constructor(private router:Router,private toastr: ToastrService) { }
+
   login = 1234;
   password = 4321;
   isLoggedIn = false;
+
   submitForm(login,password){
-    console.log(login);
-    console.log(password)
     if(login == this.login && password == this.password){
-      console.log("true");
       this.isLoggedIn = true;
       this.showSuccess()
       setTimeout(()=>{
+        console.log("true")
         this.router.navigate(['admin']);
       },1000)
-     
     } else {
       console.log("false");
       this.showWrong()
@@ -28,9 +27,7 @@ export class AuthService {
   }
 
   public isAuthenticated():Boolean {
-    if (this.isLoggedIn){
-      console.log(this.isLoggedIn)
-      
+    if (this.isLoggedIn){ 
       return true;
    } else {
      return false

@@ -12,8 +12,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
+  
   submitForm(login,password){
     this.authService.submitForm(login.value,password.value)
-    // console.log(login.value,password.value)
   }
 }
