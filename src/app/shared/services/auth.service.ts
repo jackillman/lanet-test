@@ -19,7 +19,7 @@ export class AuthService {
       setTimeout(()=>{
         console.log("true")
         this.router.navigate(['admin']);
-      },1000)
+      },500)
     } else {
       console.log("false");
       this.showWrong()
