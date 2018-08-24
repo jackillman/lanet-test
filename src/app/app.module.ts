@@ -11,7 +11,7 @@ import { AuthService } from './shared/services/auth.service';
 import { ToastrModule } from 'ngx-toastr';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
-import { NgxPasswordToggleModule } from 'ngx-password-toggle';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +28,6 @@ import { NgxPasswordToggleModule } from 'ngx-password-toggle';
     MyMaterialModule,
     AngularSvgIconModule ,
     HttpClientModule,
-    NgxPasswordToggleModule,
     ToastrModule.forRoot() // ToastrModule added
     
   ],
