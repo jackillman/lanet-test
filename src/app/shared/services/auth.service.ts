@@ -35,7 +35,7 @@ export class AuthService {
  }
 
   showSuccess() {
-    this.toastr.success('Valid password');
+    this.toastr.success('Correct password');
   }
   showWrong() {
     this.toastr.error('Invalid password');
