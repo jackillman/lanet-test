@@ -24,6 +24,7 @@
     "@angular/router": "^6.0.0",
     "angular-svg-icon": "^6.0.0",
     "core-js": "^2.5.4",
+    "ngx-password-toggle": "^1.0.3",
     "ngx-toastr": "^9.0.2",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
