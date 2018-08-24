@@ -9,7 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
 import { MyMaterialModule } from './shared/material.module';
 import { AuthService } from './shared/services/auth.service';
-
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,8 @@ import { AuthService } from './shared/services/auth.service';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MyMaterialModule
+    MyMaterialModule,
+    ToastrModule.forRoot() // ToastrModule added
     
   ],
   providers: [AuthService],
