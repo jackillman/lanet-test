@@ -21,6 +21,7 @@ export class AuthService {
         this.router.navigate(['admin']);
       },500)
     } else {
+      this.isLoggedIn = false;
       console.log("false");
       this.showWrong()
     }
